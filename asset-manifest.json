@@ -1,16 +1,22 @@
 {
   "files": {
     "main.css": "/petLove/static/css/main.f2db3b31.css",
-    "main.js": "/petLove/static/js/main.76b64318.js",
+    "main.js": "/petLove/static/js/main.83ce8a8f.js",
     "static/media/login-img-mobile.jpg": "/petLove/static/media/login-img-mobile.6c622417647ac359b1c3.jpg",
+    "static/media/home-mob1x.jpg": "/petLove/static/media/home-mob1x.d4d2666621d68b871849.jpg",
     "static/media/main-mobile1x.jpg": "/petLove/static/media/main-mobile1x.e87bbb6a9dcad5d65a13.jpg",
+    "static/media/cat-registration1x.jpg": "/petLove/static/media/cat-registration1x.0da30d961c475507d1ac.jpg",
     "static/media/logo main.svg": "/petLove/static/media/logo main.5db8900240ed1e3ac06d1e111c67891c.svg",
+    "static/media/logoLayout.svg": "/petLove/static/media/logoLayout.14ad334605445e764d93acc770bc2578.svg",
+    "static/media/logo-homepage.svg": "/petLove/static/media/logo-homepage.cd5fb65c66d08d6aa278adedb2745ba8.svg",
     "index.html": "/petLove/index.html",
+    "static/media/menu.svg": "/petLove/static/media/menu.8e3c25979193d32c844567c9ceae0704.svg",
+    "static/media/x.svg": "/petLove/static/media/x.9b2ee83c334dfb12dcb9289409cbf6a6.svg",
     "main.f2db3b31.css.map": "/petLove/static/css/main.f2db3b31.css.map",
-    "main.76b64318.js.map": "/petLove/static/js/main.76b64318.js.map"
+    "main.83ce8a8f.js.map": "/petLove/static/js/main.83ce8a8f.js.map"
   },
   "entrypoints": [
     "static/css/main.f2db3b31.css",
-    "static/js/main.76b64318.js"
+    "static/js/main.83ce8a8f.js"
   ]
 }
