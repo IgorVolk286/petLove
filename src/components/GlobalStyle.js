@@ -25,7 +25,7 @@ html,body{
 	margin-left: auto;
 	margin-right: auto;
 	font-family: 'Roboto', sans-serif;
-	background-color:#ffffff;
+	background: rgb(204, 204, 204);
 	height: 100%;
 	width: 100%;
 	font-size: 100%;
