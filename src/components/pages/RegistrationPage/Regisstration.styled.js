@@ -46,7 +46,7 @@ export const Button = styled.button`
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding: 12px 120px;
+  padding: 12px 99px;
   border-radius: 30px;
   background: rgb(246, 184, 61);
   color: #ffffff;

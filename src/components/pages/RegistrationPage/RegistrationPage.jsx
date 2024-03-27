@@ -1,4 +1,4 @@
-import { Corgi } from 'components/petBlock/petBlock';
+import { Cat } from 'components/petBlock cat/petBlockCat';
 import { Formik, Form } from 'formik';
 import * as Yup from 'yup';
 import {
@@ -11,8 +11,10 @@ import {
   DownText,
   NavLinka,
   Div,
-} from './LoginPage.styled';
-const SignInFormSchema = Yup.object().shape({
+} from '../RegistrationPage/Regisstration.styled';
+
+const RegisrationFormSchema = Yup.object().shape({
+  name: Yup.string().required('Required'),
   email: Yup.string()
     .email('Invalid email')
     .matches(/^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/)
@@ -20,22 +22,27 @@ const SignInFormSchema = Yup.object().shape({
   password: Yup.string().min(7, 'Too short! At least 2').required('Required'),
 });
 
-export const LoginPage = () => {
+export const RegistrationPage = () => {
   return (
     <Wrap>
-      <Corgi />
+      <Cat />
       <Div>
-        <Title>Log in</Title>
-        <P>Welcome! Please enter your credentials to login to the platform: </P>
+        <Title>Registration</Title>
+        <P>Thank you for your interest in our platform.</P>
         <Formik
           initialValues={{
+            name: '',
             email: '',
             password: '',
           }}
-          validationSchema={SignInFormSchema}
+          validationSchema={RegisrationFormSchema}
           //   onSubmit={values => logIn(values)}
         >
           <Form>
+            <label>
+              <Input name="name" placeholder="Name" type="text" />
+              <ErrorMes name="name" component="div" />
+            </label>
             <label>
               <Input name="email" placeholder="Email" type="email" />
               <ErrorMes name="email" component="div" />
@@ -44,11 +51,11 @@ export const LoginPage = () => {
               <Input name="password" placeholder="Password" type="password" />
               <ErrorMes name="password" component="div" />
             </label>
-            <Button type="submit">LOG IN</Button>
+            <Button type="submit">REGISTRATION</Button>
           </Form>
         </Formik>
         <DownText>
-          Don’t have an account? <NavLinka to="/register">Register</NavLinka>
+          Already have an account?<NavLinka to="/login">Login</NavLinka>
         </DownText>
       </Div>
     </Wrap>
