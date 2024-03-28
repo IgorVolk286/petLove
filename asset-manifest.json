@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/petLove/static/css/main.f2db3b31.css",
-    "main.js": "/petLove/static/js/main.ffad388e.js",
+    "main.js": "/petLove/static/js/main.cc360862.js",
     "static/media/login-img-mobile.jpg": "/petLove/static/media/login-img-mobile.6c622417647ac359b1c3.jpg",
     "static/media/home-mob1x.jpg": "/petLove/static/media/home-mob1x.d4d2666621d68b871849.jpg",
     "static/media/main-mobile1x.jpg": "/petLove/static/media/main-mobile1x.e87bbb6a9dcad5d65a13.jpg",
@@ -14,10 +14,10 @@
     "static/media/menu.svg": "/petLove/static/media/menu.8e3c25979193d32c844567c9ceae0704.svg",
     "static/media/x.svg": "/petLove/static/media/x.19d605ad850f81f88ffcb23ea3091bce.svg",
     "main.f2db3b31.css.map": "/petLove/static/css/main.f2db3b31.css.map",
-    "main.ffad388e.js.map": "/petLove/static/js/main.ffad388e.js.map"
+    "main.cc360862.js.map": "/petLove/static/js/main.cc360862.js.map"
   },
   "entrypoints": [
     "static/css/main.f2db3b31.css",
-    "static/js/main.ffad388e.js"
+    "static/js/main.cc360862.js"
   ]
 }
