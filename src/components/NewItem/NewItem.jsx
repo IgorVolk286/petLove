@@ -1,7 +1,7 @@
 import { Img, Title, Text, Button, Span, Div } from '../NewItem/NewItem.styled';
 
 export const NewItem = ({ oneNew }) => {
-  const { imgUrl, title, text, date } = oneNew;
+  const { imgUrl, title, text, date, url } = oneNew;
   const dateNews = new Date(date);
   const day = dateNews.getDate();
   const month = dateNews.getMonth() + 1;
@@ -25,7 +25,10 @@ export const NewItem = ({ oneNew }) => {
       </ul>
       <Div>
         <Span>{newsDate}</Span>
-        <Button type="button"> Read more</Button>
+        <Button href={url} target="_blank">
+          
+          Read more
+        </Button>
       </Div>
     </li>
   );

@@ -31,7 +31,7 @@ export const Text = styled.p`
   text-align: left;
   margin-bottom: 19px;
 `;
-export const Button = styled.button`
+export const Button = styled.a`
   background: transparent;
   color: rgb(246, 184, 61);
   font-family: Manrope;
