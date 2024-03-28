@@ -34,6 +34,7 @@ export const RegistrationPage = () => {
             name: '',
             email: '',
             password: '',
+            confirmpasswrd: ' ',
           }}
           validationSchema={RegisrationFormSchema}
           //   onSubmit={values => logIn(values)}
@@ -51,6 +52,14 @@ export const RegistrationPage = () => {
               <Input name="password" placeholder="Password" type="password" />
               <ErrorMes name="password" component="div" />
             </label>
+            {/* <label>
+              <Input
+                name="confirmpassword"
+                placeholder="Confirm password"
+                type="password"
+              />
+              <ErrorMes name="confirmpassword" component="div" />
+            </label> */}
             <Button type="submit">REGISTRATION</Button>
           </Form>
         </Formik>

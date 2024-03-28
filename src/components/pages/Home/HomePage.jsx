@@ -19,7 +19,7 @@ export const HomePage = () => {
   const toggle = e => {
     setMenu(!menu);
   };
-  console.log(menu);
+
   return (
     <Container>
       <Header>
@@ -30,7 +30,7 @@ export const HomePage = () => {
           <ButtonMenu type="button" onClick={toggle}>
             <Burger />
           </ButtonMenu>
-          {menu && <Menu menu={menu} toggle={toggle} />}
+          {menu && <Menu menu={menu} toggle={toggle} color={'#ffffff'} />}
         </Nav>
         <div>
           <H1>

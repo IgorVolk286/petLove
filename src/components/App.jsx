@@ -4,7 +4,7 @@ import { LoginPage } from '../components/pages/Login/LoginPage';
 import { Layout } from '../components/Layout/Layout';
 import { RegistrationPage } from '../components/pages/RegistrationPage/RegistrationPage';
 import { HomePage } from '../components/pages/Home/HomePage';
-
+import { NewsPage } from '../components/pages/News/NewsPage';
 export const App = () => {
   return (
     <div>
@@ -14,7 +14,7 @@ export const App = () => {
         <Route path="/" element={<Layout />}>
           <Route path="/login" index element={<LoginPage />}></Route>
           <Route path="/register" element={<RegistrationPage />}></Route>
-
+          <Route path="/news" element={<NewsPage />}></Route>
           {/* <Route path="*" element={<HomePage />} /> */}
         </Route>
       </Routes>

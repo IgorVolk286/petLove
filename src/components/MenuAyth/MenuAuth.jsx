@@ -6,9 +6,10 @@ import {
   Div,
   DivButtons,
   NavLin,
-} from '../../../components/Layout/Menu/Menu.styled';
+} from './MenuAuth.styled';
 import { useEffect } from 'react';
-export const Menu = ({ menu, toggle, color }) => {
+
+export const MenuAuth = ({ menu, toggle, color }) => {
   useEffect(() => {
     const onEscapeClick = e => {
       if (e.code === 'Escape') {

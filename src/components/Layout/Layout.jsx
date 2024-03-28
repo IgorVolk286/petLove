@@ -18,8 +18,15 @@ import {
   ButtonMenu,
 } from '../Layout/Layout.styled';
 import { NavLink, Outlet } from 'react-router-dom';
-
+import { useState } from 'react';
+import { MenuAuth } from '../../components/MenuAyth/MenuAuth';
 export const Layout = () => {
+  const [menu, setMenu] = useState(false);
+
+  const toggle = e => {
+    setMenu(!menu);
+  };
+
   //   const navigate = useNavigate();
   //   const dispatch = useDispatch();
   //   const isLogin = useSelector(selectIsLogin);
@@ -58,10 +65,12 @@ export const Layout = () => {
         <NavLink to="/home">
           <LogoPet />
         </NavLink>
-        <ButtonMenu>
+        <ButtonMenu type="button" onClick={toggle}>
           <Burger />
         </ButtonMenu>
-
+        {menu && (
+          <MenuAuth menu={menu} toggle={toggle} color={'rgb(246, 184, 61)'} />
+        )}
         {/* <Logo to="/"> Nanny.Services </Logo> */}
 
         {/* {isLogin ? (

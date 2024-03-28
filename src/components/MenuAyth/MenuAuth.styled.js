@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { ReactComponent as IconClose } from '../../../img/x.svg';
+import { ReactComponent as IconClose } from '../../img/x.svg';
 import { NavLink } from 'react-router-dom';
 export const Cross = styled(IconClose)`
   width: 16px;
@@ -12,8 +12,9 @@ export const NavLin = styled(NavLink)`
   font-weight: 700;
   line-height: 18px;
   letter-spacing: -3%;
+
   &:hover {
-    color: #f6b83d;
+    color: rgb(246, 184, 61);
   }
 `;
 export const ButtonClose = styled.button`
@@ -24,11 +25,12 @@ export const ButtonClose = styled.button`
 `;
 export const Buttons = styled.button`
   padding: 15px 20px;
-  border: 1px solid rgba(38, 38, 38, 0.15);
+  background: transparent;
   border-radius: 30px;
-
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: rgb(255, 255, 255);
   &:hover {
-    border: 1px solid rgb(246, 184, 61);
+    border: 1px solid rgb(255, 255, 255);
   }
 `;
 
@@ -45,14 +47,14 @@ export const ButtonAuth = styled.button`
   margin-right: auto;
   padding: 12px 40px;
   border-radius: 30px;
-  background: rgb(246, 184, 61);
-
+  background: transparent;
+  color: rgb(255, 255, 255);
   margin-top: 30px;
   margin-bottom: 12px;
-
+  border: 1px solid rgba(255, 255, 255, 0.5);
   &:hover {
-    background: #fff4df;
-    color: #f6b83d;
+    background: rgb(255, 244, 223);
+    color: rgb(246, 184, 61);
   }
 `;
 export const Div = styled.div`

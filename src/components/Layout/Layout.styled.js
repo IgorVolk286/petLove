@@ -176,6 +176,7 @@ export const Container = styled.div`
   margin-left: auto;
   height: auto;
   background: rgb(249, 249, 249);
+  position: relative;
 
   /* @media (min-width: 768px) {
     width: 100%;
