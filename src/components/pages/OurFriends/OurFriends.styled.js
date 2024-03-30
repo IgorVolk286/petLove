@@ -18,3 +18,7 @@ export const List = styled.ul`
   gap: 24px;
   margin-top: 24px;
 `;
+export const Div = styled.div`
+  width: 375px;
+  height: 1720px;
+`;

@@ -32,7 +32,9 @@ export const Menu = ({ menu, toggle, color }) => {
           <Link to="/news">News</Link>
         </Buttons>
         <Buttons type="button">Find pet</Buttons>
-        <Buttons type="button">Our friends</Buttons>
+        <Buttons type="button">
+          <Link to="/friends">Our friends</Link>
+        </Buttons>
       </DivButtons>
 
       <div>

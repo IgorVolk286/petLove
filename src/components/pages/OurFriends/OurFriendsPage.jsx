@@ -5,6 +5,7 @@ import {
   Input,
   Title,
   List,
+  Div,
 } from '../OurFriends/OurFriends.styled';
 import { FriendItem } from '../../../components/FriendItem/FriendItem';
 import axios from 'axios';
@@ -28,7 +29,7 @@ export const OurFriendsPage = () => {
   }, []);
   console.log(friend);
   return (
-    <div>
+    <Div>
       <Title>Our friends</Title>
 
       <List>
@@ -36,6 +37,6 @@ export const OurFriendsPage = () => {
           <FriendItem oneFriend={friendsItem} key={friendsItem._id} />
         ))}
       </List>
-    </div>
+    </Div>
   );
 };

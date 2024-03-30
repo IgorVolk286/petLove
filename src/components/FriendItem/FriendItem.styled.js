@@ -70,6 +70,7 @@ export const Li = styled.li`
 `;
 export const Card = styled.li`
   display: flex;
+  width: 335px;
   flex-direction: row;
   justify-content: center;
   gap: 14px;
