@@ -29,9 +29,7 @@ export const Menu = ({ menu, toggle, color }) => {
       </ButtonClose>
       <DivButtons>
         <Buttons type="button">
-          {' '}
-          News
-          <Link to="/news"></Link>
+          <Link to="/news">News</Link>
         </Buttons>
         <Buttons type="button">Find pet</Buttons>
         <Buttons type="button">Our friends</Buttons>

@@ -8,7 +8,7 @@ import {
   NavLin,
 } from './MenuAuth.styled';
 import { useEffect } from 'react';
-
+import { Link } from 'react-router-dom';
 export const MenuAuth = ({ menu, toggle, color }) => {
   useEffect(() => {
     const onEscapeClick = e => {
@@ -28,7 +28,9 @@ export const MenuAuth = ({ menu, toggle, color }) => {
         <Cross />
       </ButtonClose>
       <DivButtons>
-        <Buttons type="button">News</Buttons>
+        <Buttons type="button">
+          <Link to="/news">News</Link>
+        </Buttons>
         <Buttons type="button">Find pet</Buttons>
         <Buttons type="button">Our friends</Buttons>
       </DivButtons>
