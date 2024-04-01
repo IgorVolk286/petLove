@@ -1,4 +1,13 @@
-import { Img, Title, Text, Button, Span, Div } from '../NewItem/NewItem.styled';
+import {
+  Img,
+  Title,
+  Text,
+  Button,
+  Span,
+  Div,
+  Li,
+  List,
+} from '../NewItem/NewItem.styled';
 
 export const NewItem = ({ oneNew }) => {
   const { imgUrl, title, text, date, url } = oneNew;
@@ -11,8 +20,8 @@ export const NewItem = ({ oneNew }) => {
   const newsDate = `${formatDay}/${formatMonth}/${year}`;
 
   return (
-    <li>
-      <ul>
+    <Li>
+      <List>
         <li>
           <Img src={imgUrl} alt="picture" />
         </li>
@@ -22,14 +31,13 @@ export const NewItem = ({ oneNew }) => {
         <li>
           <Text>{text}</Text>
         </li>
-      </ul>
+      </List>
       <Div>
         <Span>{newsDate}</Span>
         <Button href={url} target="_blank">
-          
           Read more
         </Button>
       </Div>
-    </li>
+    </Li>
   );
 };

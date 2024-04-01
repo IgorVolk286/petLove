@@ -80,10 +80,8 @@ export const Div = styled.div`
   height: 812px;
   padding: 36px 20px 40px 20px;
   z-index: 5000;
-  position: relative;
+
   background: ${props => props.color};
-  width: 218px;
-  height: 812px;
   position: absolute;
   bottom: -20px;
   top: ${props => (props.menu ? '3px' : '-180px')};
@@ -91,7 +89,7 @@ export const Div = styled.div`
   transition: left 250 ease;
   @media (min-width: 768px) {
     width: 374px;
-    height: 1024px;
+    height: 100%;
     padding: 40px 49px;
   }
 `;
@@ -102,5 +100,17 @@ export const DivButtonsAuth = styled.div`
     margin-right: auto;
     margin-left: auto;
     justify-content: center;
+  }
+`;
+export const NavLinAuth = styled(NavLink)`
+  color: rgb(255, 255, 255);
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -3%;
+  text-align: left;
+  &:hover {
+    color: rgb(246, 184, 61);
   }
 `;

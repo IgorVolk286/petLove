@@ -1,5 +1,13 @@
 import { useEffect, useState } from 'react';
-import { Icon, Button, Input, Title, List } from '../News/NewsPage.styled';
+import {
+  Icon,
+  Button,
+  Input,
+  Title,
+  List,
+  DivSearch,
+  Div,
+} from '../News/NewsPage.styled';
 import { NewItem } from '../../../components/NewItem/NewItem';
 import axios from 'axios';
 export const NewsPage = () => {
@@ -20,20 +28,22 @@ export const NewsPage = () => {
   }, []);
 
   return (
-    <div>
-      <Title>News</Title>
-      <form>
-        <Input type="text" placeholder="Search" />
-        <Button type="submit">
-          <Icon />
-        </Button>
-      </form>
+    <Div>
+      <DivSearch>
+        <Title>News</Title>
+        <form>
+          <Input type="text" placeholder="Search" />
+          <Button type="submit">
+            <Icon />
+          </Button>
+        </form>
+      </DivSearch>
 
       <List>
         {news.map(newItem => (
           <NewItem oneNew={newItem} key={newItem._id} />
         ))}
       </List>
-    </div>
+    </Div>
   );
 };

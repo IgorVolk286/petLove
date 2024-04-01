@@ -7,9 +7,10 @@ import {
   DivButtons,
   NavLin,
   DivButtonsAuth,
+  NavLinAuth,
 } from '../../../components/Layout/Menu/Menu.styled';
 import { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+
 export const Menu = ({ menu, toggle, color }) => {
   useEffect(() => {
     const onEscapeClick = e => {
@@ -40,10 +41,10 @@ export const Menu = ({ menu, toggle, color }) => {
 
       <DivButtonsAuth>
         <ButtonAuth type="button">
-          <NavLin to="/login"> LOGIN </NavLin>
+          <NavLinAuth to="/login"> LOGIN </NavLinAuth>
         </ButtonAuth>
         <ButtonAuth type="button">
-          <NavLin to="/register">REGISTRATION</NavLin>
+          <NavLinAuth to="/register">REGISTRATION</NavLinAuth>
         </ButtonAuth>
       </DivButtonsAuth>
     </Div>

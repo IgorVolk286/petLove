@@ -9,7 +9,14 @@ export const Img = styled.img`
   width: 335px;
   height: 190px;
   border-radius: 15px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
+
+  @media (min-width: 768px) {
+    width: 340px;
+    height: 226px;
+    border-radius: 15px;
+    /* margin-bottom: 28px; */
+  }
 `;
 export const Title = styled.h2`
   color: rgb(38, 38, 38);
@@ -20,6 +27,13 @@ export const Title = styled.h2`
   letter-spacing: -3%;
   text-align: left;
   margin-bottom: 12px;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    margin-bottom: 14px;
+  }
 `;
 export const Text = styled.p`
   color: rgb(38, 38, 38);
@@ -30,6 +44,11 @@ export const Text = styled.p`
   letter-spacing: -2%;
   text-align: left;
   margin-bottom: 19px;
+  @media (min-width: 768px) {
+    font-size: 16px;
+
+    line-height: 20px;
+  }
 `;
 export const Button = styled.a`
   background: transparent;
@@ -54,4 +73,12 @@ export const Span = styled.span`
 export const Div = styled.div`
   display: flex;
   justify-content: space-between;
+`;
+export const Li = styled.li`
+  @media (min-width: 768px) {
+    width: 340px;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 28px;
+  }
 `;
