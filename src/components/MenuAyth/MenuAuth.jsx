@@ -6,6 +6,7 @@ import {
   Div,
   DivButtons,
   NavLin,
+  DivButtonsAuth,
 } from './MenuAuth.styled';
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
@@ -35,14 +36,14 @@ export const MenuAuth = ({ menu, toggle, color }) => {
         <Buttons type="button">Our friends</Buttons>
       </DivButtons>
 
-      <div>
+      <DivButtonsAuth>
         <ButtonAuth type="button">
           <NavLin to="/login"> LOGIN </NavLin>
         </ButtonAuth>
         <ButtonAuth type="button">
           <NavLin to="/register">REGISTRATION</NavLin>
         </ButtonAuth>
-      </div>
+      </DivButtonsAuth>
     </Div>
   );
 };

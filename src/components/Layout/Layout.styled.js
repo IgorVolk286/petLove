@@ -9,19 +9,20 @@ export const Burger = styled(IconMenu)`
   height: 32px;
   /* fill: #ffffff; */
 
-  /* @media (min-width: 768px) {
-    display: none;
-  } */
+  @media (min-width: 768px) {
+    width: 36px;
+    height: 36px;
+  }
 `;
 export const LogoPet = styled(IconLogoPet)`
   width: 76px;
   height: 20px;
   fill: #ffffff;
-  /* margin-right: 10px;
 
   @media (min-width: 768px) {
-    display: none;
-  } */
+    width: 105px;
+    height: 28px;
+  }
 `;
 
 export const Logo = styled(NavLink)`
@@ -178,13 +179,13 @@ export const Container = styled.div`
   background: rgb(249, 249, 249);
   position: relative;
 
-  /* @media (min-width: 768px) {
+  @media (min-width: 768px) {
     width: 100%;
-    height: auto;
-    padding: 10px 32px;
+    height: 1024px;
+    padding: 32px;
   }
 
-  @media (min-width: 1440px) {
+  /* @media (min-width: 1440px) {
     width: 100%;
     padding: 10px 32px;
   } */
@@ -222,11 +223,8 @@ export const Header = styled.header`
   justify-content: space-between;
   align-items: center;
 
-  /* @media (min-width: 768px) {
-    width: 100%;
-    height: auto;
-    justify-content: space-between;
-    padding: 10px 32px;
+  @media (min-width: 768px) {
+    /* padding: 10px 32px; */
   }
 
   @media (min-width: 1440px) {
@@ -237,7 +235,7 @@ export const Header = styled.header`
     background: rgb(16, 57, 49);
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-  } */
+  }
 `;
 export const ButtonLogin = styled.button`
   background-color: var(--main-color--);
@@ -371,4 +369,48 @@ export const Menu = styled.div`
 export const ButtonMenu = styled.button`
   background: transparent;
   position: relative;
+`;
+
+export const ButtonAuth = styled.button`
+  display: block;
+  padding: 15px 20px;
+  border-radius: 30px;
+  background: rgb(246, 184, 61);
+
+  &:hover {
+    background: #fff4df;
+    color: #f6b83d;
+  }
+`;
+export const NavLin = styled(NavLink)`
+  color: rgb(255, 255, 255);
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: -3%;
+  &:hover {
+    color: #f6b83d;
+  }
+`;
+export const DiVNav = styled.div`
+  display: none;
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+  }
+`;
+
+export const DivNavs = styled.div`
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+  }
 `;

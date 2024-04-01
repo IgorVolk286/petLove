@@ -12,7 +12,8 @@ import {
   NavLinka,
   Div,
 } from '../RegistrationPage/Regisstration.styled';
-
+import { Jack } from '../../Jack/Jack';
+import { useMediaQuery } from 'react-responsive';
 const RegisrationFormSchema = Yup.object().shape({
   name: Yup.string().required('Required'),
   email: Yup.string()
@@ -23,9 +24,11 @@ const RegisrationFormSchema = Yup.object().shape({
 });
 
 export const RegistrationPage = () => {
+  const isTablet = useMediaQuery({ minWidth: 768 });
   return (
     <Wrap>
       <Cat />
+      {isTablet && <Jack />}
       <Div>
         <Title>Registration</Title>
         <P>Thank you for your interest in our platform.</P>
@@ -64,7 +67,7 @@ export const RegistrationPage = () => {
           </Form>
         </Formik>
         <DownText>
-          Already have an account?<NavLinka to="/login">Login</NavLinka>
+          Already have an account? <NavLinka to="/login">Login</NavLinka>
         </DownText>
       </Div>
     </Wrap>

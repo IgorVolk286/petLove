@@ -7,6 +7,11 @@ export const Wrap = styled.div`
   margin-top: 26px;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: 768px) {
+    width: 100%;
+    height: 560px;
+  }
 `;
 export const ErrorMes = styled(ErrorMessage)`
   color: red;
@@ -26,10 +31,11 @@ export const Title = styled.h1`
   text-align: left;
   margin-bottom: 12px;
 
-  /* @media (min-width: 768px) {
-    font-size: 40px;
-    line-height: 48px;
-  } */
+  @media (min-width: 768px) {
+    font-size: 54px;
+    line-height: 54px;
+    margin-bottom: 16px;
+  }
 `;
 export const P = styled.p`
   color: rgb(38, 38, 38);
@@ -40,6 +46,13 @@ export const P = styled.p`
   letter-spacing: -2%;
   text-align: left;
   margin-bottom: 24px;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    margin-bottom: 32px;
+  }
 `;
 
 export const Button = styled.button`
@@ -56,6 +69,18 @@ export const Button = styled.button`
   &:hover {
     background: #fff4df;
     color: #f6b83d;
+  }
+  @media (min-width: 768px) {
+    padding: 16px 180px;
+
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -3%;
+    text-align: left;
+    margin-bottom: 16px;
+    margin-top: 64px;
   }
 
   /* @media (min-width: 768px) {
@@ -85,7 +110,7 @@ export const Input = styled(Field)`
   padding: 12px;
 
   &::placeholder {
-    width: 34px;
+    /* width: 34px; */
     height: 18px;
     color: rgba(38, 38, 38, 0.5);
     font-family: Manrope;
@@ -94,6 +119,12 @@ export const Input = styled(Field)`
     line-height: 18px;
     letter-spacing: -3%;
     text-align: left;
+  }
+
+  @media (min-width: 768px) {
+    padding: 16px 340px 16px 16px;
+    width: 100%;
+    height: 52px;
   }
 `;
 export const DownText = styled.p`
@@ -104,6 +135,11 @@ export const DownText = styled.p`
   letter-spacing: -3%;
   color: rgba(38, 38, 38, 0.5);
   text-align: center;
+
+  @media (min-width: 768px) {
+    font-size: 14px;
+    line-height: 20px;
+  }
 `;
 
 export const NavLinka = styled(NavLink)`
@@ -113,13 +149,23 @@ export const NavLinka = styled(NavLink)`
   line-height: 14px;
   letter-spacing: -3%;
   color: rgb(246, 184, 61);
+  @media (min-width: 768px) {
+    font-size: 14px;
+    line-height: 20px;
+  }
 `;
 export const Div = styled.div`
   width: 100%;
-  height: 442px;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
   padding: 60px 20px;
   border-radius: 30px;
   background: rgb(255, 255, 255);
+
+  @media (min-width: 768px) {
+    padding: 71px 140px;
+    border-radius: 60px;
+    height: auto;
+  }
 `;

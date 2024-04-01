@@ -12,6 +12,8 @@ import {
   NavLinka,
   Div,
 } from './LoginPage.styled';
+import { Rich } from '../../Rich/Rich';
+import { useMediaQuery } from 'react-responsive';
 const SignInFormSchema = Yup.object().shape({
   email: Yup.string()
     .email('Invalid email')
@@ -21,9 +23,11 @@ const SignInFormSchema = Yup.object().shape({
 });
 
 export const LoginPage = () => {
+  const isTablet = useMediaQuery({ minWidth: 768 });
   return (
     <Wrap>
       <Corgi />
+      {isTablet && <Rich />}
       <Div>
         <Title>Log in</Title>
         <P>Welcome! Please enter your credentials to login to the platform: </P>

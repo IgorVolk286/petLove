@@ -8,6 +8,9 @@ import {
   // NavList,
   // Nav,
   Container,
+  NavLin,
+  ButtonAuth,
+  DivNavs,
   // IconLogoUser,
   // IconDiv,
   // ButtonlogOut,
@@ -16,6 +19,7 @@ import {
   Burger,
   // Menu,
   ButtonMenu,
+  DiVNav,
 } from '../Layout/Layout.styled';
 import { NavLink, Outlet } from 'react-router-dom';
 import { useState } from 'react';
@@ -65,13 +69,22 @@ export const Layout = () => {
         <NavLink to="/home">
           <LogoPet />
         </NavLink>
-        <ButtonMenu type="button" onClick={toggle}>
-          <Burger />
-        </ButtonMenu>
+        <DivNavs>
+          <DiVNav>
+            <ButtonAuth type="button">
+              <NavLin to="/login"> LOGIN </NavLin>
+            </ButtonAuth>
+            <ButtonAuth type="button">
+              <NavLin to="/register">REGISTRATION</NavLin>
+            </ButtonAuth>
+          </DiVNav>
+          <ButtonMenu type="button" onClick={toggle}>
+            <Burger />
+          </ButtonMenu>
+        </DivNavs>
         {menu && (
           <MenuAuth menu={menu} toggle={toggle} color={'rgb(246, 184, 61)'} />
         )}
-        {/* <Logo to="/"> Nanny.Services </Logo> */}
 
         {/* {isLogin ? (
             <Nav>

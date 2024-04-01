@@ -6,6 +6,7 @@ import {
   Div,
   DivButtons,
   NavLin,
+  DivButtonsAuth,
 } from '../../../components/Layout/Menu/Menu.styled';
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
@@ -29,22 +30,22 @@ export const Menu = ({ menu, toggle, color }) => {
       </ButtonClose>
       <DivButtons>
         <Buttons type="button">
-          <Link to="/news">News</Link>
+          <NavLin to="/news">News</NavLin>
         </Buttons>
         <Buttons type="button">Find pet</Buttons>
         <Buttons type="button">
-          <Link to="/friends">Our friends</Link>
+          <NavLin to="/friends">Our friends</NavLin>
         </Buttons>
       </DivButtons>
 
-      <div>
+      <DivButtonsAuth>
         <ButtonAuth type="button">
           <NavLin to="/login"> LOGIN </NavLin>
         </ButtonAuth>
         <ButtonAuth type="button">
           <NavLin to="/register">REGISTRATION</NavLin>
         </ButtonAuth>
-      </div>
+      </DivButtonsAuth>
     </Div>
   );
 };
