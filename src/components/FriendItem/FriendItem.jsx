@@ -48,16 +48,16 @@ export const FriendItem = ({ oneFriend }) => {
           <Title>{title}</Title>
         </li>
         <Li>
-          <A href="mailto:${email}"> Email </A>
+          <A href="mailto:"> Email </A>
           {email ? <Text>:{email}</Text> : <Text>: Website only</Text>}
         </Li>
 
         <Li>
-          <A href="${addressUrl}">Adress</A>
+          <A href="">Adress</A>
           {address ? <Text>:{address}</Text> : <Text>: Website only</Text>}
         </Li>
         <Li>
-          <A href="tel:+${phone}">Phone</A>
+          <A href="tel:+">Phone</A>
           {phone ? <Text>:{phone}</Text> : <Text>: Website only</Text>}
         </Li>
       </CardUl>
