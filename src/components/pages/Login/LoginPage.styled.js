@@ -9,8 +9,16 @@ export const Wrap = styled.div`
   margin-right: auto;
 
   @media (min-width: 768px) {
-    width: 100%;
-    height: 560px;
+    width: 768px;
+    height: auto;
+  }
+  @media (min-width: 1280px) {
+    width: 1280px;
+    display: flex;
+
+    flex-direction: row;
+
+    gap: 32px;
   }
 `;
 export const ErrorMes = styled(ErrorMessage)`
@@ -72,7 +80,6 @@ export const Button = styled.button`
   }
   @media (min-width: 768px) {
     padding: 16px 180px;
-
     font-family: Manrope;
     font-size: 16px;
     font-weight: 700;
@@ -82,22 +89,6 @@ export const Button = styled.button`
     margin-bottom: 16px;
     margin-top: 64px;
   }
-
-  /* @media (min-width: 768px) {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 16px 190px;
-    border-radius: 30px;
-    background: rgb(16, 57, 49);
-    color: #ffffff;
-    margin-top: 22px; */
-  /* 
-  &:hover {
-    background: rgba(16, 57, 49, 0.2);
-    color: rgb(16, 57, 49);
-  } */
 `;
 export const Label = styled.label``;
 export const Input = styled(Field)`
@@ -166,6 +157,12 @@ export const Div = styled.div`
   @media (min-width: 768px) {
     padding: 71px 140px;
     border-radius: 60px;
-    height: auto;
+  }
+  @media (min-width: 1280px) {
+    width: 592px;
+    height: 654px;
+    padding: 118px 84px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 `;

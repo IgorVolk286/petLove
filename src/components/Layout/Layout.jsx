@@ -19,9 +19,11 @@ import {
   Burger,
   // Menu,
   ButtonMenu,
+  DivButtons,
   DiVNav,
+  Buttons,
 } from '../Layout/Layout.styled';
-import { NavLink, Outlet } from 'react-router-dom';
+import { NavLink, Outlet, Link } from 'react-router-dom';
 import { useState } from 'react';
 import { MenuAuth } from '../../components/MenuAyth/MenuAuth';
 export const Layout = () => {
@@ -70,6 +72,13 @@ export const Layout = () => {
           <LogoPet />
         </NavLink>
         <DivNavs>
+          <DivButtons>
+            <Buttons type="button">
+              <Link to="/news">News</Link>
+            </Buttons>
+            <Buttons type="button">Find pet</Buttons>
+            <Buttons type="button">Our friends</Buttons>
+          </DivButtons>
           <DiVNav>
             <ButtonAuth type="button">
               <NavLin to="/login"> LOGIN </NavLin>

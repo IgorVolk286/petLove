@@ -70,17 +70,19 @@ export const List = styled.ul`
   flex-direction: column;
   gap: 24px;
   margin-top: 24px;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
 
   @media (min-width: 768px) {
     flex-direction: row;
     margin-top: 0px;
     flex-wrap: wrap;
     flex-basis: 340px;
+    margin-left: auto;
+    margin-right: auto;
   }
 `;
 export const Div = styled.div`
   width: 100%;
-  height: auto;
+  height: 100%;
 `;

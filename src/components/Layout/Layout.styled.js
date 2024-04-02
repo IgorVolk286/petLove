@@ -7,11 +7,13 @@ import { ReactComponent as IconMenu } from '../../img/menu.svg';
 export const Burger = styled(IconMenu)`
   width: 32px;
   height: 32px;
-  /* fill: #ffffff; */
 
   @media (min-width: 768px) {
     width: 36px;
     height: 36px;
+  }
+  @media (min-width: 1280px) {
+    display: none;
   }
 `;
 export const LogoPet = styled(IconLogoPet)`
@@ -32,7 +34,6 @@ export const Logo = styled(NavLink)`
   &:hover {
     color: red;
   }
-
   @media (min-width: 768px) {
     display: block;
     color: rgb(251, 251, 251);
@@ -43,7 +44,7 @@ export const Logo = styled(NavLink)`
     letter-spacing: -2%;
     margin-right: 30px;
   }
-  @media (min-width: 1440px) {
+  /* @media (min-width: 1440px) {
     display: block;
     color: rgb(251, 251, 251);
     font-family: Helvetica Neue;
@@ -51,9 +52,10 @@ export const Logo = styled(NavLink)`
     font-weight: 500;
     line-height: 28px;
     letter-spacing: -2%;
-  }
+  } */
+
+  // export const IconLogoUser = styled(IconLogo)
 `;
-// export const IconLogoUser = styled(IconLogo)`
 //   width: 12px;
 //   height: 12px;
 
@@ -82,7 +84,7 @@ export const IconDiv = styled.div`
     height: 30px;
     border-radius: 8px;
   }
-  @media (min-width: 1440px) {
+  @media (min-width: 1280px) {
     width: 40px;
     height: 40px;
     border-radius: 10px;
@@ -115,7 +117,7 @@ export const ButtonlogOut = styled.button`
       background-color: #ffffff;
     }
   }
-  @media (min-width: 1440px) {
+  @media (min-width: 1280px) {
     color: rgb(251, 251, 251);
     font-family: Helvetica Neue;
     font-size: 16px;
@@ -162,7 +164,7 @@ export const Link = styled(NavLink)`
     }
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1280px) {
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
@@ -181,40 +183,13 @@ export const Container = styled.div`
 
   @media (min-width: 768px) {
     width: 100%;
-    height: 1024px;
     padding: 32px;
   }
 
-  /* @media (min-width: 1440px) {
-    width: 100%;
-    padding: 10px 32px;
-  } */
+  @media (min-width: 1280px) {
+    width: 1280px;
+  }
 `;
-// export const ContainerH = styled.div`
-//   width: 100%;
-//   height: auto;
-//   padding: 10px;
-//   border-top-left-radius: 20px;
-//   border-top-right-radius: 20px;
-//   margin: 0px auto;
-//   background: rgb(16, 57, 49);
-
-//   @media (min-width: 768px) {
-//     width: 768px;
-//     height: auto;
-//     padding: 10px 32px;
-//   }
-
-//   @media (min-width: 1440px) {
-//     width: 1440px;
-//     height: auto;
-//     padding: 10px 32px;
-//     border-top-left-radius: 30px;
-//     border-top-right-radius: 30px;
-
-//     background: rgb(16, 57, 49);
-//   }
-// `;
 export const Header = styled.header`
   width: 100%;
   height: auto;
@@ -224,17 +199,14 @@ export const Header = styled.header`
   align-items: center;
 
   @media (min-width: 768px) {
+    width: 768px;
     /* padding: 10px 32px; */
   }
 
-  @media (min-width: 1440px) {
-    width: 1184px;
-    height: auto;
-    margin: 0px auto;
+  @media (min-width: 1280px) {
+    width: 1216px;
     justify-content: space-between;
-    background: rgb(16, 57, 49);
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+    background: rgb(249, 249, 249);
   }
 `;
 export const ButtonLogin = styled.button`
@@ -412,5 +384,43 @@ export const DivNavs = styled.div`
     flex-direction: row;
     align-items: center;
     gap: 8px;
+  }
+`;
+
+export const DivButtons = styled.div`
+  display: none;
+
+  @media (min-width: 1280px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    gap: 10px;
+    margin-right: 142px;
+  }
+`;
+export const Buttons = styled.button`
+  padding: 15px 20px;
+  background: transparent;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: rgb(255, 255, 255);
+  &:hover {
+    border: 1px solid rgb(255, 255, 255);
+  }
+
+  @media (min-width: 1280px) {
+    padding: 15px 20px;
+    background: transparent;
+    box-sizing: border-box;
+    border: 1px solid rgba(38, 38, 38, 0.15);
+    border-radius: 30px;
+    color: rgb(38, 38, 38);
+    &:hover {
+      border: 1px solid rgb(255, 255, 255);
+    }
   }
 `;

@@ -17,7 +17,16 @@ export const Div = styled.div`
     border-radius: 20px;
     background: rgb(255, 255, 255);
   }
+  @media (min-width: 1280px) {
+    top: 500px;
+  }
+
+  @media (min-width: 1280px) {
+    top: 550px;
+    left: 93px;
+  }
 `;
+
 export const DivLogo = styled.div`
   @media (min-width: 768px) {
     width: 60px;

@@ -10,6 +10,10 @@ export const Img = styled.img`
   height: 80px;
   border-radius: 50px;
   margin-bottom: 20px;
+  @media (min-width: 768px) {
+    width: 90px;
+    height: 90px;
+  }
 `;
 export const Title = styled.h2`
   color: rgb(38, 38, 38);
@@ -20,6 +24,11 @@ export const Title = styled.h2`
   letter-spacing: -4%;
   text-align: left;
   margin-bottom: 14px;
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 20px;
+  }
 `;
 export const A = styled.a`
   color: rgba(38, 38, 38, 0.5);
@@ -77,6 +86,14 @@ export const Card = styled.li`
   border-radius: 15px;
   background: rgb(255, 255, 255);
   padding: 12px;
+
+  @media (min-width: 768px) {
+    width: 342px;
+    gap: 16px;
+  }
+  @media (min-width: 1280px) {
+    width: 371px;
+  }
 `;
 export const CardUl = styled.ul`
   display: flex;

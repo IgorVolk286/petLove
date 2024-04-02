@@ -12,6 +12,12 @@ export const Wrap = styled.div`
     width: 100%;
     height: auto;
   }
+  @media (min-width: 1280px) {
+    width: 1280px;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
 `;
 export const ErrorMes = styled(ErrorMessage)`
   color: red;
@@ -146,5 +152,12 @@ export const Div = styled.div`
     padding: 30px 140px;
     border-radius: 60px;
     height: auto;
+  }
+  @media (min-width: 1280px) {
+    width: 592px;
+    height: 654px;
+    padding: 118px 84px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 `;

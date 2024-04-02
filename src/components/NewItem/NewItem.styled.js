@@ -4,7 +4,11 @@ export const List = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 24px;
+  @media (min-width: 768px) {
+    gap: 0px;
+  }
 `;
+
 export const Img = styled.img`
   width: 335px;
   height: 190px;
@@ -15,7 +19,7 @@ export const Img = styled.img`
     width: 340px;
     height: 226px;
     border-radius: 15px;
-    /* margin-bottom: 28px; */
+    margin-bottom: 28px;
   }
 `;
 export const Title = styled.h2`
@@ -32,7 +36,7 @@ export const Title = styled.h2`
     font-size: 20px;
     font-weight: 700;
     line-height: 26px;
-    margin-bottom: 14px;
+    /* margin-bottom: 14px; */
   }
 `;
 export const Text = styled.p`
