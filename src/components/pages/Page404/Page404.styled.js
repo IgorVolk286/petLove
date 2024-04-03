@@ -1,6 +1,6 @@
 import img from '../../../img/404.png';
 import imgTablet from '../../../img/404tablet.png';
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Div = styled.div`
