@@ -15,7 +15,9 @@ export const Page404 = () => {
         <Img></Img>
         <DivBtn>
           <P>Ooops! This page not found &#58;&#40;</P>
-          <Button>To home page</Button>
+          <Button>
+            <NavLink to="/home">To home page</NavLink>
+          </Button>
         </DivBtn>
       </Content>
     </Div>
