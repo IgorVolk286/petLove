@@ -23,15 +23,7 @@ export const FriendItem = ({ oneFriend }) => {
     phone,
     email,
   } = oneFriend;
-  console.log(oneFriend.workDays);
-  // const dateNews = new Date(date);
-  // const day = dateNews.getDate();
-  // const month = dateNews.getMonth() + 1;
-  // const year = dateNews.getFullYear();
-  // const formatDay = day < 10 ? '0' + day : day;
-  // const formatMonth = month < 10 ? '0' + month : month;
-  // const newsDate = `${formatDay}/${formatMonth}/${year}`;
-
+  console.log(phone);
   return (
     <Card>
       <Img src={imageUrl} alt="picture" />
@@ -48,7 +40,7 @@ export const FriendItem = ({ oneFriend }) => {
           <Title>{title}</Title>
         </li>
         <Li>
-          <A href="mailto:"> Email </A>
+          <A href="mailto:{email}"> Email </A>
           {email ? <Text>:{email}</Text> : <Text>: Website only</Text>}
         </Li>
 
@@ -57,7 +49,7 @@ export const FriendItem = ({ oneFriend }) => {
           {address ? <Text>:{address}</Text> : <Text>: Website only</Text>}
         </Li>
         <Li>
-          <A href="tel:+">Phone</A>
+          <A href="tel:{phone}">Phone</A>
           {phone ? <Text>:{phone}</Text> : <Text>: Website only</Text>}
         </Li>
       </CardUl>

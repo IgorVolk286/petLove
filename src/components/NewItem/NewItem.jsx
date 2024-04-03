@@ -11,6 +11,7 @@ import {
 
 export const NewItem = ({ oneNew }) => {
   const { imgUrl, title, text, date, url } = oneNew;
+  console.log(oneNew);
   const dateNews = new Date(date);
   const day = dateNews.getDate();
   const month = dateNews.getMonth() + 1;
@@ -21,6 +22,7 @@ export const NewItem = ({ oneNew }) => {
 
   return (
     <Li>
+      <div></div>
       <List>
         <li>
           <Img src={imgUrl} alt="picture" />
