@@ -6,6 +6,7 @@ import { RegistrationPage } from '../components/pages/RegistrationPage/Registrat
 import { HomePage } from '../components/pages/Home/HomePage';
 import { NewsPage } from '../components/pages/News/NewsPage';
 import { OurFriendsPage } from '../components/pages/OurFriends/OurFriendsPage';
+import { Page404 } from '../components/pages/Page404/Page404';
 export const App = () => {
   return (
     <div>
@@ -17,6 +18,9 @@ export const App = () => {
           <Route path="/register" element={<RegistrationPage />}></Route>
           <Route path="/news" element={<NewsPage />}></Route>
           <Route path="/friends" element={<OurFriendsPage />}></Route>
+          <Route path="*" element={<Page404 />}>
+            {' '}
+          </Route>
         </Route>
       </Routes>
     </div>
