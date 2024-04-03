@@ -1,16 +1,18 @@
 {
   "files": {
     "main.css": "/petLove/static/css/main.f2db3b31.css",
-    "main.js": "/petLove/static/js/main.48d08770.js",
+    "main.js": "/petLove/static/js/main.13a128f3.js",
     "static/media/home-decktop1x.jpg": "/petLove/static/media/home-decktop1x.19fde8fa2af18aba67ff.jpg",
     "static/media/home-tabl1x.jpg": "/petLove/static/media/home-tabl1x.e3bbe2281aef2f855594.jpg",
     "static/media/registration-decktop1x.png": "/petLove/static/media/registration-decktop1x.11fdb374910091d0e8ef.png",
     "static/media/login-desctop1x.jpg": "/petLove/static/media/login-desctop1x.20454ac36f4ddcd6b425.jpg",
+    "static/media/404tablet.png": "/petLove/static/media/404tablet.cf035ffd1401fad5116b.png",
     "static/media/jack-tablet1x.jpg": "/petLove/static/media/jack-tablet1x.a07fa26fb07fd0882cf3.jpg",
     "static/media/login-img-mobile.jpg": "/petLove/static/media/login-img-mobile.6c622417647ac359b1c3.jpg",
     "static/media/login1x-tablet.jpeg": "/petLove/static/media/login1x-tablet.781a35293b9d8d367b24.jpeg",
     "static/media/home-mob1x.jpg": "/petLove/static/media/home-mob1x.d4d2666621d68b871849.jpg",
     "static/media/main-mobile1x.jpg": "/petLove/static/media/main-mobile1x.e87bbb6a9dcad5d65a13.jpg",
+    "static/media/404.png": "/petLove/static/media/404.ddd627524e7afc54c9d9.png",
     "static/media/cat-registration1x.jpg": "/petLove/static/media/cat-registration1x.0da30d961c475507d1ac.jpg",
     "static/media/logo main.svg": "/petLove/static/media/logo main.5db8900240ed1e3ac06d1e111c67891c.svg",
     "static/media/logoLayout.svg": "/petLove/static/media/logoLayout.14ad334605445e764d93acc770bc2578.svg",
@@ -20,10 +22,10 @@
     "static/media/menu.svg": "/petLove/static/media/menu.8e3c25979193d32c844567c9ceae0704.svg",
     "static/media/x.svg": "/petLove/static/media/x.19d605ad850f81f88ffcb23ea3091bce.svg",
     "main.f2db3b31.css.map": "/petLove/static/css/main.f2db3b31.css.map",
-    "main.48d08770.js.map": "/petLove/static/js/main.48d08770.js.map"
+    "main.13a128f3.js.map": "/petLove/static/js/main.13a128f3.js.map"
   },
   "entrypoints": [
     "static/css/main.f2db3b31.css",
-    "static/js/main.48d08770.js"
+    "static/js/main.13a128f3.js"
   ]
 }
