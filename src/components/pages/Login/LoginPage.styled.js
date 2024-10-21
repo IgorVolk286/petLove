@@ -111,6 +111,9 @@ export const Input = styled(Field)`
     letter-spacing: -3%;
     text-align: left;
   }
+  &:invalid {
+    order: 1px solid red;
+  }
 
   @media (min-width: 768px) {
     padding: 16px 340px 16px 16px;

@@ -16,10 +16,12 @@ import { Rich } from '../../Rich/Rich';
 import { useMediaQuery } from 'react-responsive';
 const SignInFormSchema = Yup.object().shape({
   email: Yup.string()
-    .email('Invalid email')
+    .email('Enter a valid Email')
     .matches(/^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/)
-    .required('Required'),
-  password: Yup.string().min(7, 'Too short! At least 2').required('Required'),
+    .required('Enter a valid Email'),
+  password: Yup.string()
+    .min(7, 'Too short! ')
+    .required('Enter a valid Password'),
 });
 
 export const LoginPage = () => {
@@ -39,17 +41,38 @@ export const LoginPage = () => {
           validationSchema={SignInFormSchema}
           //   onSubmit={values => logIn(values)}
         >
-          <Form>
-            <label>
-              <Input name="email" placeholder="Email" type="email" />
-              <ErrorMes name="email" component="div" />
-            </label>
-            <label>
-              <Input name="password" placeholder="Password" type="password" />
-              <ErrorMes name="password" component="div" />
-            </label>
-            <Button type="submit">LOG IN</Button>
-          </Form>
+          {({ errors, touched }) => (
+            <Form>
+              <label>
+                <Input
+                  name="email"
+                  placeholder="Email"
+                  type="email"
+                  style={
+                    errors.email && touched.email
+                      ? { borderColor: '#EF5050', color: '#EF5050' }
+                      : null
+                  }
+                />
+                <ErrorMes name="email" component="div" />
+              </label>
+              <label>
+                <Input
+                  name="password"
+                  placeholder="Password"
+                  type="password"
+                  style={
+                    errors.email && touched.email
+                      ? { borderColor: '#EF5050', color: '#EF5050' }
+                      : null
+                  }
+                />
+
+                <ErrorMes name="password" component="div" />
+              </label>
+              <Button type="submit">LOG IN</Button>
+            </Form>
+          )}
         </Formik>
         <DownText>
           Don’t have an account? <NavLinka to="/register">Register</NavLinka>

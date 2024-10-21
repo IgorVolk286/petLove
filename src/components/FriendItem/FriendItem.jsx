@@ -16,7 +16,7 @@ export const FriendItem = ({ oneFriend }) => {
     title,
     // date,
     // url,
-    // addressUrl,
+    addressUrl,
     // workDays,
     imageUrl,
     address,
@@ -45,7 +45,7 @@ export const FriendItem = ({ oneFriend }) => {
         </Li>
 
         <Li>
-          <A href="">Adress</A>
+          <A href="{addressUrl}">Adress</A>
           {address ? <Text>:{address}</Text> : <Text>: Website only</Text>}
         </Li>
         <Li>
